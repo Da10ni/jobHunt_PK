@@ -2,11 +2,11 @@
   "name": "jobhuntpk-apply-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "JobHunt PK auto-apply bot — Playwright worker, deployed as its own Railway service (see backend/prisma/CLAUDE.md and the plan for why this is nested under backend/ rather than a new top-level directory).",
+  "description": "JobHunt PK auto-apply bot \u2014 Playwright worker, deployed as its own Railway service (see backend/prisma/CLAUDE.md and the plan for why this is nested under backend/ rather than a new top-level directory).",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
+    "start": "node api.js && node src/server.js",
+    "dev": "node api.js && node --watch src/server.js",
     "test": "node --test"
   },
   "dependencies": {
